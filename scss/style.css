@@ -55,7 +55,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #e5e5e5;
 }
 
 [tabindex="-1"]:focus {
@@ -479,7 +479,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #e5e5e5;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -4128,16 +4128,16 @@ input[type="button"].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #e5e5e5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 1px #e5e5e5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #e5e5e5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #e5e5e5, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .custom-range::-moz-focus-outer {
@@ -4354,8 +4354,8 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  background-color: #e5e5e5;
+  border-color: #dee2e6 #dee2e6 #e5e5e5;
 }
 
 .nav-tabs .dropdown-menu {
@@ -4855,10 +4855,10 @@ input[type="button"].btn-block {
           flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #f4f3ee;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 15px;
 }
 
 .card > hr {
@@ -4867,13 +4867,13 @@ input[type="button"].btn-block {
 }
 
 .card > .list-group:first-child .list-group-item:first-child {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card > .list-group:last-child .list-group-item:last-child {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .card-body {
@@ -4912,7 +4912,7 @@ input[type="button"].btn-block {
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: calc(15px - 1px) calc(15px - 1px) 0 0;
 }
 
 .card-header + .list-group .list-group-item:first-child {
@@ -4926,7 +4926,7 @@ input[type="button"].btn-block {
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 calc(15px - 1px) calc(15px - 1px);
 }
 
 .card-header-tabs {
@@ -4952,19 +4952,19 @@ input[type="button"].btn-block {
 
 .card-img {
   width: 100%;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: calc(15px - 1px);
 }
 
 .card-img-top {
   width: 100%;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(15px - 1px);
+  border-top-right-radius: calc(15px - 1px);
 }
 
 .card-img-bottom {
   width: 100%;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(15px - 1px);
+  border-bottom-left-radius: calc(15px - 1px);
 }
 
 .card-deck {
@@ -10568,5 +10568,36 @@ a.text-dark:hover, a.text-dark:focus {
 .nav_item-logo {
   color: #262626 !important;
   font-size: 36px;
+}
+
+.d-flex > .card-border {
+  border: 3px solid #c32c72;
+}
+
+.d-flex > .card-fill {
+  background-color: #c32c72;
+}
+
+footer {
+  background-color: #f4f3ee;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 576px) {
+  footer {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=style.css.map */

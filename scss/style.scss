@@ -50,3 +50,24 @@
   color: #262626 !important;
   font-size: 36px;
 }
+
+.d-flex > .card-border {
+  border: 3px solid #c32c72;
+}
+
+.d-flex > .card-fill {
+  background-color: #c32c72;
+}
+
+footer {
+  background-color: #f4f3ee;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include media-breakpoint-up(sm) {
+  footer {
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+}
