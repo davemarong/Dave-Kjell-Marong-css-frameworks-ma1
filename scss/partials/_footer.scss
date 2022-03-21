@@ -1,0 +1,12 @@
+footer {
+  background-color: #f4f3ee;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include media-breakpoint-up(sm) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

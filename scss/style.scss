@@ -27,23 +27,5 @@
 @import "../bootstrap-scss/popover";
 @import "../bootstrap-scss/utilities";
 
-.d-flex > .card-border {
-  border: 3px solid $primary;
-}
-
-.d-flex > .card-fill {
-  background-color: $primary;
-}
-
-footer {
-  background-color: #f4f3ee;
-  flex-direction: column;
-  align-items: center;
-}
-
-@include media-breakpoint-up(sm) {
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+@import "./partials/card";
+@import "./partials/footer";
